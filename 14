@@ -1,0 +1,18 @@
+// Declare a string variable words containing a list of comma-separated values
+
+let city = ("mysuru,mandya,malavalli,blore,bidadi");
+console.log(city.split()); 
+
+//output:
+// ['mysuru,mandya,malavalli,blore,bidadi']
+
+// 0
+// : 
+// "mysuru,mandya,malavalli,blore,bidadi"
+// length
+// : 
+// 1
+// [[Prototype]]
+// : 
+// Array(0)
+
