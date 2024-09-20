@@ -1,0 +1,9 @@
+// Find and Replace a Word
+
+let str = "royal enfield himalayan" ;
+let str1 = str.indexOf("himalayan");
+console.log(str1);  //14
+
+let updatestr = str.replace("himalayan","scram");
+console.log(updatestr); //royal enfield scram
+
