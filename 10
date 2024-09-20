@@ -1,0 +1,10 @@
+// Declare a string variable text with mixed case letters.
+
+let str = "himaLAyaN";
+console.log(str.toUpperCase());
+
+// output:HIMALAYAN
+
+console.log(str.toLowerCase());
+
+// output:himalayan
