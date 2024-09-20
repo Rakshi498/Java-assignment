@@ -1,0 +1,7 @@
+// Declare a string variable str with extra spaces at the beginning and end
+
+let str = "     Sugar city Mandya       ";
+let str1 = str.trimStart(); //Sugar city Mandya       
+let str2 = str.trimEnd(); //     Sugar city Mandya
+let str3 = str.trim(); //Sugar city Mandya
+console.log(str1,str2,str3);
