@@ -1,0 +1,28 @@
+//var is a functional scope
+ 
+var num=15; //num value is 15
+var num=10; //num value is 10
+num=25; // num value is 25
+console.log(num);
+
+var num=40; //undefined
+
+//let is a blockscope
+
+let num=25; //num value is 25
+let num=15; //Identifier 'num' has already been declared
+num=40; //num value is 40
+console.log(num);
+
+let num=30; //erroe: Cannot access 'num' before initialization
+
+//const is a blockscope
+
+const num=20; //num value is 20
+const num=30; //Identifier 'num' has already been declared
+num=50;
+console.log(num);
+
+const num=10; //erroe: Cannot access 'num' before initialization
+
+
