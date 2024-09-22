@@ -1,0 +1,21 @@
+// Declare a string variable sentence containing at least 10 words
+
+let str = "this is the story of the gangster in the world";
+console.log(str.substr(0,8)); //this is
+
+console.log(str.slice(20));  //the gangster in the world
+
+console.log(str.substring(2,20)); //is is the story of
+
+console.log(str.charAt(15)); //r
+
+console.log(str.toUpperCase()); //THIS IS THE STORY OF THE GANGSTER IN THE WORLD
+
+console.log(str.toLowerCase()); //this is the story of the gangster in the world
+
+
+ 
+
+
+
+
