@@ -1,0 +1,12 @@
+// calculates the sum of all elements in an array 
+
+let num = [9,8,7,6,5];
+
+function sumofarray(arr) {
+    let sum=0;
+    for (let i=0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+        return sum;
+}
+console.log(sumofarray(num)); //35
