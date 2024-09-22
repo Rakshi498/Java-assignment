@@ -1,0 +1,21 @@
+// Write a function suggestClothing 
+
+function suggestClothing(Celsius) {
+    let suggest;
+    if (Celsius<0) {
+        return "Wear a heavy coat and thermal wear.";
+    }
+    else if (Celsius>0 && Celsius<=15) {
+        return "Wear a jacket."
+    }
+    else if (Celsius>=16 && Celsius<=25) {
+        return "Wear a light sweater.";
+    }
+    else {
+        return "Wear shorts and a t-shirt.";
+    }
+}
+
+console.log(suggestClothing(2)); //Wear a jacket.
+console.log(suggestClothing(30)); //Wear shorts and a t-shirt.
+
