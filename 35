@@ -1,0 +1,21 @@
+// Write a function calculateInvestmentReturn 
+
+function calculateInvestmentReturn(Principal,interestrate,years) {
+    let typeofinvestment;
+    if (interestrate < 5) {
+        typeofinvestment = "Low Risk";
+      } else if (interestrate >= 5 && interestrate <= 10) {
+        typeofinvestment = "Medium Risk";
+      } else {
+        typeofinvestment = "High Risk";
+      }
+      let totalAmount = Principal + (Principal * interestrate * years) / 100;
+      return {
+        typeofinvestment: typeofinvestment,
+        totalAmount: totalAmount,
+      }
+}
+
+    console.log(calculateInvestmentReturn(2000,2,3)); //{typeofinvestment: 'Low Risk', totalAmount: 2120}
+    console.log(calculateInvestmentReturn(3000,15,2)); //{typeofinvestment: 'High Risk', totalAmount: 3900}
+    
