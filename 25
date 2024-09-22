@@ -1,0 +1,9 @@
+// Declare an array words with values ["Hello", "world", "this", "is", "JavaScript"].
+
+let arr = ["Hello", "world", "this", "is", "JavaScript"]
+// arr.join(" ");
+// console.log(arr);
+
+let word = arr.join(" ");
+console.log(word); //Hello world this is JavaScript
+
