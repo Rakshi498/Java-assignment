@@ -1,0 +1,16 @@
+// returns an array of unique elements from an array
+
+function getUniqueElements(arr) {
+    const uniqueElements = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        if (!uniqueElements.includes(arr[i])) {
+            uniqueElements.push(arr[i]); 
+        }
+    }
+
+    return uniqueElements;
+}
+
+let arr=[3,2,3,4,4,1,1,6,5]
+console.log(getUniqueElements(arr)); //[3, 2, 4, 1, 6, 5]
