@@ -1,0 +1,17 @@
+// Declare an array fruits with values ["apple", "banana", "mango"]
+
+let arr=["apple", "banana", "mango"];
+arr.push("pineapple");
+console.log(arr); // ['apple', 'banana', 'mango', 'pineapple']
+
+
+arr.pop();
+console.log(arr); // ['apple', 'banana', 'mango']
+
+
+arr.shift();
+console.log(arr); // ['banana', 'mango']
+
+ 
+arr.unshift("grape");
+console.log(arr); // ['grape', 'banana', 'mango']
