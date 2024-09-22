@@ -1,0 +1,16 @@
+// finds the longest word in a given sentence 
+
+function findLongestWord(sentence) {
+    const words = sentence.split(' ');
+    let longestWord = '';
+    for (let word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word; 
+        }
+    }
+
+    return longestWord; 
+}
+
+let sentence="occurrences of each character in a string";
+console.log(findLongestWord(sentence)); //occurrences
