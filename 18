@@ -1,0 +1,10 @@
+let isTrue = "true";
+let newstr = isTrue.toString();
+
+console.log(newstr); //true
+
+let isTrueNumber = Number(isTrue);
+console.log(isTrueNumber); //NaN
+console.log(typeof isTrueNumber); //number
+
+
