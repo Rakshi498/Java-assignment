@@ -1,0 +1,20 @@
+// Write a function calculateFinalPrice 
+
+function calculateFinalPrice (totalPrice, Membership) {
+    let discount;
+    if (Membership === "regular") {
+        discount = 0;
+    }
+    else if (Membership === "silver") {
+        discount = 10;
+    }
+    else if (Membership === "gold") {
+        discount = 20;
+    }
+    let discountprice = (discount/100)*totalPrice;
+    let finalAmount = totalPrice - discountprice;
+    return finalAmount;
+}
+
+console.log(calculateFinalPrice(200, "silver")); //180
+console.log(calculateFinalPrice(200, "gold")); //160
