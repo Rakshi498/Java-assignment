@@ -1,0 +1,15 @@
+// Write a function checkVotingEligibility that
+
+function checkVotingEligibility(age){
+    if (age>=18) {
+        return "Eligible to vote";
+    }
+    else {
+        return "Not Eligible to vote";
+    }  
+}
+let elegible=checkVotingEligibility(20);
+console.log(elegible);  //Eligible to vote
+
+let elegiblility=checkVotingEligibility(15);
+console.log(elegiblility); //Not Eligible to vote
