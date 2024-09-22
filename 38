@@ -1,0 +1,32 @@
+// function that generates the Fibonacci sequence up to a specified number
+
+function generateFibonacci(specifiedValue) {
+    let fibonacciSequence = [];
+    let a = 0;
+    let b = 1;
+
+    while (a <= specifiedValue) {
+        fibonacciSequence.push(a);
+        let next = a + b; 
+        a = b; 
+        b = next; 
+    }
+
+    return fibonacciSequence;
+}
+
+console.log(generateFibonacci(25));
+
+// [0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+console.log(generateFibonacci(15));
+
+// [0, 1, 1, 2, 3, 5, 8, 13]
+
+console.log(generateFibonacci(50));
+
+// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+console.log(generateFibonacci(70));
+
+// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
