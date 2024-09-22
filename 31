@@ -1,0 +1,27 @@
+// Write a function determineGameLevel 
+
+function GameLevel(score) {
+    
+    if(score>=0 && score<=49) {
+        Level = "beginner";
+        Message = "work hard in the future";
+    }
+    else if (score>=50 && score <=79) {
+        Level = "Intermediate"
+        Message = "Good, work for higher score";
+    }
+    else if (score>=80 && score<=100) {
+        Level = "Advanced";
+        Message = "Execellent, keep going the same Worker";
+    }
+    else {
+        return "Not a valid score";
+    }
+    return Level+" "+Message;
+  }
+
+  console.log(GameLevel(60)); //Intermediate Good, work for higher score
+
+  console.log(GameLevel(99)); //Advanced Execellent, keep going the same Worker
+  
+  
