@@ -1,0 +1,22 @@
+// Write a function isLeapYear that:
+
+function isLeapyear(year) {
+    if (year % 4 === 0) {
+      if (year % 100 === 0) {
+        if (year % 400 === 0) {
+          return "Leap Year";
+        } else {
+          return "Not a Leap Year";
+        }
+      } else {
+        return "Leap Year";
+      }
+    } else {
+      return "Not a Leap Year";
+    }
+  } 
+
+  console.log(isLeapyear(2012)); //Leap Year
+  console.log(isLeapyear(2015)); //Not a Leap Year
+  
+  
