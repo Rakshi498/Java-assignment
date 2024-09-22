@@ -1,0 +1,8 @@
+// Declare a string variable strNumber with a value of "123.456"
+
+let num = "123.456";
+console.log(Number(num)); //123.456
+console.log(parseInt(num)); //123
+console.log(parseFloat(num)); //123.456
+
+
