@@ -1,0 +1,21 @@
+// Declare an array arr with values [1, 2, 3].
+
+let arr=[1,2,3];
+
+let str1= String(arr);
+console.log(str1); //1,2,3
+
+let num1= Number(arr);
+console.log(num1); //NaN
+
+let obj = {
+    Name: "Raksh", 
+    Age: 26,
+}
+
+let str2=String(obj);
+console.log(str2);  //[object Object]
+
+let num2=Number(obj);
+console.log(num2);  //NaN
+
