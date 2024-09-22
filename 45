@@ -1,0 +1,14 @@
+// finds the Minimum value in an array 
+
+let numbers = [40, 10, 100, 87];
+
+function minValue(arr) {
+  let min = arr[0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+console.log(minValue(numbers)); //10
