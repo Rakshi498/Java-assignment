@@ -1,0 +1,7 @@
+// Declare a string variable text with a sentence
+
+let word = "Use the array method to remove the last fruit from the array, and print the updated array";
+console.log(word.includes("method")); //true
+console.log(word.includes("raksh")); //false
+
+
