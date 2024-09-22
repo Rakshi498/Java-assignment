@@ -1,0 +1,18 @@
+// checks if a string is a palindrom
+
+function isPalindrome(str){
+    let palindrome="";
+    for(let i=str.length-1; i>=0; i--){
+        palindrome += str[i]
+    }
+
+    return str === palindrome;
+}
+
+console.log(isPalindrome("SMS"));
+
+output: true
+
+console.log(isPalindrome("EASY"));
+
+output: false
