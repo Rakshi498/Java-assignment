@@ -1,0 +1,25 @@
+// Write a function calculateDiscount that:
+
+function calculateDiscount(totalamount) {
+    let percentage;
+    if (totalamount < 50) {
+        percentage = 0;
+      } else if (totalamount >= 50 && totalamount < 100) {
+        percentage = 10; 
+      } else if (totalamount >= 100 && totalamount <= 200) {
+        percentage = 20; 
+      } else {
+        percentage = 30;
+      }
+      let discount = (percentage/100)*totalamount;
+      let finalAmount = totalamount - discount;
+      return finalAmount;
+}
+ let finalAmount=calculateDiscount(200);
+ console.log(finalAmount); //160
+
+ let finalAmount1=calculateDiscount(90);
+ console.log(finalAmount1); //81
+
+
+ 
