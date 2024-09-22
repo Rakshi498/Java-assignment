@@ -1,0 +1,30 @@
+// Write a function weatherAdvice that
+function weatherCondition(weather) {
+    let advice;
+  
+    switch (weather) {
+      case "sunny":
+        advice = "Wear Sunglasses";
+        break;
+      case "rainy":
+        advice = "Take an Umbrella";
+        break;
+      case "snowy":
+        advice = "Wear a Heavy Coat";
+        break;
+      case "cloudy":
+        advice = "Might rain;carry an Umbrella";
+        break;
+      default:
+        advice = "Weather condition not recognized";
+    }
+    return advice;
+  };
+console.log(weatherCondition("sunny")); //"Wear Sunglasses"
+console.log(weatherCondition("rainy")); //"Take an Umbrella"
+console.log(weatherCondition("snowy")); //"Wear a Heavy Coat"
+console.log(weatherCondition("cloudy")); //"Might rain;carry an Umbrella"
+console.log(weatherCondition("sun")); //Weather condition not recognized
+
+
+
