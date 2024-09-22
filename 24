@@ -1,0 +1,13 @@
+// Declare an array colors with values ["red", "green", "blue", "yellow", "purple"].
+
+const colors=["red", "green", "blue", "yellow", "purple"];
+colors.pop("blue");
+console.log(colors); //(4) ['red', 'green', 'blue', 'yellow']
+
+colors.splice(2,0,"orange","pink");
+console.log(colors); //(6) ['red', 'green', 'orange', 'pink', 'blue', 'yellow']
+
+const substring = colors.splice(0,3);
+console.log(substring); //(3) ['red', 'green', 'orange']
+
+
