@@ -1,0 +1,20 @@
+// Write a function temperatureStatus that
+
+function temperatureStatus(temp) {
+    if (temp<15) {
+      return "Cold";
+    } else if (temp>=15 && temp<=30) {
+      return "Warm";
+    } else {
+      return "Hot";
+    }
+  }
+
+let temp = temperatureStatus(20);
+console.log(temp);  //warm
+
+let temp1 = temperatureStatus(31);
+console.log(temp); //Hot
+
+let temp2 = temperatureStatus(10);
+console.log(temp); //Cold
